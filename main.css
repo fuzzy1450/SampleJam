@@ -109,7 +109,27 @@ body {
     margin-top: 100px;
 }
 
+.keyboard {
+    position:relative;
+    margin: 0 auto;
+}
+
 .row0 img {
+    width: 3%;
+    margin: 4px;
+}
+
+.row1 img {
+    width: 3%;
+    margin: 4px;
+}
+
+.row2 img {
+    width: 3%;
+    margin: 4px;
+}
+
+.row3 img {
     width: 3%;
     margin: 4px;
 }
