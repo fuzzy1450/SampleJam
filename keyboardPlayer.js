@@ -57,7 +57,7 @@ newSound("airhorn", "./Sounds/airhorn", "mp3");
 function getKey(e){
 	e=window.event;
 	console.log(e.keyCode + " 1");
-	if(currentKeyboard=2){
+	if(currentKeyboard===1){
 		switch (e.keyCode){
 			case 173:
 				playSound("airhorn", 173);
@@ -141,7 +141,9 @@ function getKey(e){
             
 		}
 	} else if(currentKeyboard==2){
-		
+		switch(e.keyCode){
+			
+		}
 	}
 	
 	if(e.keyCode===37){
