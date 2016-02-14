@@ -173,7 +173,8 @@ function getKey(e){
 				break;
 			case 76:
 				playSound("ichord8", 76);
-                case 90:
+                break;
+            case 90:
 				playSound("kick", 90);
 				break;
 			case 88:
@@ -200,14 +201,17 @@ function getKey(e){
 	
 	if(e.keyCode===37){
 		currentKeyboard--;
+        document.getElementById("keyboardName").innerHTML="<h1>« Keyboard "+currentKeyboard+" »</h1>"
 	} else if(e.keyCode === 39){
 		currentKeyboard++;
+        document.getElementById("keyboardName").innerHTML="<h1>« Keyboard "+currentKeyboard+" »</h1>"
 	}
 }
 
 function clearKey(e){
 	e=window.event;
 	playing[e.keyCode] = false;
+    document.getElementsByClassName("key"+e.keyCode)[0].style.backgroundColor="transparent";
 }
 
 function playSound(x, y){
@@ -218,12 +222,15 @@ function playSound(x, y){
 			window[x+"sIndex"]=0;
 		}
 		playing[y]=true;
+        console.log("key"+y);
+        document.getElementsByClassName("key"+y)[0].style.backgroundColor="#FFFFFF";
 	}
 }
 firstRun=true;
 function playMetro() {
-	playSound("metronome", 1);
+	playSound("metronome", 77);
 	setTimeout(startKeyboard(), 3000);
+    document.getElementsByClassName("key"+77)[0].style.backgroundColor="transparent";
 }
 
 metronomeTimer = window.setInterval(playMetro(), 461);

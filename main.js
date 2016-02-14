@@ -14,6 +14,11 @@ function soundboards(){
     document.getElementsByClassName("soundboards")[0].style.backgroundColor = "#696969";
 }
 
+function closeSbDrop(){
+    document.getElementById("sbMenu").style.display = "none";
+    document.getElementsByClassName("soundboards")[0].style.backgroundColor = "#000000";
+    document.getElementById("sbDropdown").style.display="none";
+}
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
