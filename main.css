@@ -127,7 +127,7 @@ body {
 
 .row0 canvas {
     width: 8%;
-    height: 100px;
+    height: 64px;
     margin-left: 4px;
     margin-top: 4px;
     margin-right: 4px;
@@ -136,19 +136,19 @@ body {
 
 .row1 canvas {
     width: 8%;
-    height:100px;
+    height:64px;
     margin: 4px;
 }
 
 .row2 canvas {
     width: 8%;
-    height: 100px;
+    height: 64px;
     margin: 4px;
 }
 
 .row3 canvas {
     width: 8%;
-    height: 100px;
+    height: 64px;
     margin: 4px;
 }
 
