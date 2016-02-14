@@ -48,7 +48,7 @@ newSound("E4", "./Sounds/Synths/Intro/Notes/E4", "wav");
 newSound("E4dFn4", "./Sounds/Synths/Intro/Notes/E4-Fn4", "wav");
 newSound("E5", "./Sounds/Synths/Intro/Notes/E5", "wav");
 newSound("Fn4", "./Sounds/Synths/Intro/Notes/Fn4", "wav");
-
+newSound("airhorn", "./Sounds/airhorn", "mp3")
 
 
 function getKey(e){
@@ -56,10 +56,10 @@ function getKey(e){
 	console.log(e.keyCode + " 1");
 	switch (e.keyCode){
 		case 88:
-			playSound("hats", 88);
+			playSound("hat", 88);
 			break;
 		case 101:
-			playSound("airhorns", 101);
+			playSound("airhorn", 101);
 			break;
         case 81:
             playSound("D4", 81);
@@ -68,7 +68,7 @@ function getKey(e){
             playSound("E4", 87);
             break;
         case 69:
-            playSound("E4dFn4")
+            playSound("E4dFn4", 69)
 	}
 	
 }
@@ -80,10 +80,10 @@ function clearKey(e){
 
 function playSound(x, y){
 	if(!playing[y]){
-		window[x][window[x+"Index"]].play();
-		window[x+"Index"]++;
-		if(window[x+"Index"]>14){
-			window[x+"Index"]=0;
+		window[x+"s"][window[x+"sIndex"]].play();
+		window[x+"sIndex"]++;
+		if(window[x+"sIndex"]>14){
+			window[x+"sIndex"]=0;
 		}
 		playing[y]=true;
 	}
