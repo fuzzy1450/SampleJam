@@ -58,8 +58,8 @@ function getKey(e){
 		case 88:
 			playSound("hat", 88);
 			break;
-		case 101:
-			playSound("airhorn", 101);
+		case 173:
+			playSound("airhorn", 173);
 			break;
         case 81:
             playSound("D4", 81);
