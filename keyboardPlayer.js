@@ -1,12 +1,12 @@
 var playing = [];
-for(xi=0; xi!=1000; xi++){
+for(xi=0; xi!=500; xi++){
 	playing[xi] = false;
 }
 
 function newSound(soundName, fileLoc, extension){
 		window[soundName+ "s"] = [];
 		window[soundName+"sIndex"] = 0;
-		for(xi=0; xi!=150; xi++){
+		for(xi=0; xi!=75; xi++){
 			window[soundName+"s"][xi] = new buzz.sound(fileLoc, {formats:[extension]});;
 		}
 		
@@ -82,7 +82,7 @@ function playSound(x, y){
 	if(!playing[y]){
 		window[x][window[x+"Index"]].play();
 		window[x+"Index"]++;
-		if(window[x+"Index"]>100){
+		if(window[x+"Index"]>70){
 			window[x+"Index"]=0;
 		}
 		playing[y]=true;
