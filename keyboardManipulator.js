@@ -12,7 +12,7 @@ function startKeyboard(){
 		img.width=64;
 		img.height=64;
 	
-		ctx.drawImage(img,0,0,64,100);
+		ctx.drawImage(img,0,0,175,135);
 	
 	}
 }

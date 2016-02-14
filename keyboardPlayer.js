@@ -223,10 +223,8 @@ function playSound(x, y){
 firstRun=true;
 function playMetro() {
 	playSound("metronome", 1);
-	if(firstRun){
-		startKeyboard();
-		firstRun=false;
-	}
+	setTimeout(startKeyboard(), 3000);
 }
 
 metronomeTimer = window.setInterval(playMetro(), 461);
+
