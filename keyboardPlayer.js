@@ -3,6 +3,8 @@ for(xi=0; xi!=500; xi++){
 	playing[xi] = false;
 }
 
+var currentKeyboard = 1;
+
 function newSound(soundName, fileLoc, extension){
 		window[soundName+ "s"] = [];
 		window[soundName+"sIndex"] = 0;
@@ -55,89 +57,92 @@ newSound("airhorn", "./Sounds/airhorn", "mp3");
 function getKey(e){
 	e=window.event;
 	console.log(e.keyCode + " 1");
-	switch (e.keyCode){
-		case 173:
-			playSound("airhorn", 173);
-			break;
-        case 81:
-            playSound("D4", 81);
-            break;
-        case 87:
-            playSound("E4", 87);
-            break;
-        case 69:
-            playSound("E4dFn4", 69);
-            break;
-        case 82:
-            playSound("Fn4", 82);
-            break;
-        case 84: 
-            playSound("A4", 84);
-            break;
-        case 89:
-            playSound("B4", 89);
-            break;
-        case 85:
-            playSound("Cn5", 85);
-            break;
-        case 73:
-            playSound("D5", 73);
-            break;
-        case 79:
-            playSound("E5", 79);
-            break;
-        case 80:
-            playSound("A5", 80);
-            break;
-        case 65:
-            playSound("cracklingC5", 65);
-            break;
-        case 83:
-            playSound("reverb1", 83);
-            break;
-        case 68:
-            playSound("whitenoise1", 68);
-            break;
-        case 70:
-            playSound("whip", 70);
-        case 71:
-            playSound("A416th", 71);
-            break;
-        case 72:
-            playSound("ichord6", 72);
-            break;
-        case 74:
-            playSound("ichord7", 74);
-            break;
-        case 75:
-            playSound("ichord4", 75);
-            break;
-        case 76:
-            playSound("ichord5", 76);
-            break;
-        case 90:
-            playSound("kick", 90);
-            break;
-        case 88:
-			playSound("hat", 88);
-			break;
-        case 67:
-            playSound("snare", 67);
-            break;
-        case 86:
-            playSound("notificationA4", 86);
-            break;
-        case 66:
-            playSound("ichord1", 66);
-            break;
-        case 78:
-            playSound("ichord2", 78);
-        case 77:
-            playSound("ichord3", 77);
-            break;
+		if(currentKeyboard=2){
+		switch (e.keyCode){
+			case 173:
+				playSound("airhorn", 173);
+				break;
+			case 81:
+				playSound("D4", 81);
+				break;
+			case 87:
+				playSound("E4", 87);
+				break;
+			case 69:
+				playSound("E4dFn4", 69);
+				break;
+			case 82:
+				playSound("Fn4", 82);
+				break;
+			case 84: 
+				playSound("A4", 84);
+				break;
+			case 89:
+				playSound("B4", 89);
+				break;
+			case 85:
+				playSound("Cn5", 85);
+				break;
+			case 73:
+				playSound("D5", 73);
+				break;
+			case 79:
+				playSound("E5", 79);
+				break;
+			case 80:
+				playSound("A5", 80);
+				break;
+			case 65:
+				playSound("cracklingC5", 65);
+				break;
+			case 83:
+				playSound("reverb1", 83);
+				break;
+			case 68:
+				playSound("whitenoise1", 68);
+				break;
+			case 70:
+				playSound("whip", 70);
+			case 71:
+				playSound("A416th", 71);
+				break;
+			case 72:
+				playSound("ichord6", 72);
+				break;
+			case 74:
+				playSound("ichord7", 74);
+				break;
+			case 75:
+				playSound("ichord4", 75);
+				break;
+			case 76:
+				playSound("ichord5", 76);
+				break;
+			case 90:
+				playSound("kick", 90);
+				break;
+			case 88:
+				playSound("hat", 88);
+				break;
+			case 67:
+				playSound("snare", 67);
+				break;
+			case 86:
+				playSound("notificationA4", 86);
+				break;
+			case 66:
+				playSound("ichord1", 66);
+				break;
+			case 78:
+				playSound("ichord2", 78);
+			case 77:
+				playSound("ichord3", 77);
+				break;
             
+		}
+	} else if(currentKeyboard==2){
+		
 	}
-	
 }
 
 function clearKey(e){
