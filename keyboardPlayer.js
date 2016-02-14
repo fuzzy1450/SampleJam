@@ -49,7 +49,7 @@ newSound("E4", "./Sounds/Synths/Intro/Notes/E4", "wav");
 newSound("E4dFn4", "./Sounds/Synths/Intro/Notes/E4-Fn4", "wav");
 newSound("E5", "./Sounds/Synths/Intro/Notes/E5", "wav");
 newSound("Fn4", "./Sounds/Synths/Intro/Notes/Fn4", "wav");
-
+newSound("airhorn", "./Sounds/airhorn", "mp3");
 
 
 function getKey(e){
