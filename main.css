@@ -100,7 +100,7 @@ body {
 
 #sbDropdown{
     display: none;
-    position: relative;
+    position: fixed;
     background-color: #000000;
     color: #07C1BE;
     margin: 0 auto;
@@ -108,6 +108,7 @@ body {
     height: 400px;
     margin-top: 100px;
 	z-index: 100;
+    left: 34.15080527%;
 }
 
 .keyboard {
@@ -140,4 +141,46 @@ body {
 .row3 img {
     width: 8%;
     margin: 4px;
+}
+
+.soundMenu {
+    margin: 5px;
+    background-color: #000000;
+    color: #07C1BE;
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.soundMenu:hover {
+    background-color: #333333
+}
+
+.loopMenu {
+    margin: 5px;
+    background-color: #000000;
+    color: #07C1BE;
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.loopMenu:hover {
+    background-color: #333333
+}
+
+.soundboards{
+    margin: 5px;
+    background-color: #000000;
+    color: #07C1BE;
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.soundboards:hover {
+    background-color: #333333
 }
