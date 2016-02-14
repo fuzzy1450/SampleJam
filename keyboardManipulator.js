@@ -19,8 +19,13 @@ function startKeyboard(){
 
 function recolorKeyboard(color) {
 	for(xe=0; xe!=canvases.length; xe++){
+		
 		var canvas = canvases[xe];
-		tintImage(canvas, color);
+		var ctx = canvases[xe].getContext("2d");
+
+		originalPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+		currentPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+		changeColor(currentPixels, originalPixels);
 	}
 }
 
@@ -34,7 +39,7 @@ function hexToRGB(hex)
     };
 }
 
- function changeColor()
+ function changeColor(currentPixels, originalPixels)
     {
         if(!originalPixels) return; // Check if image has loaded
         var newColor = hexToRGB(document.getElementById("color").value);
