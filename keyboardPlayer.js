@@ -238,10 +238,10 @@ function getKey(e){
 	
 	if(e.keyCode===37){
 		currentKeyboard--;
-        document.getElementById("keyboardName").innerHTML="<h1>« Keyboard "+currentKeyboard+" »</h1>"
+        document.getElementById("keyboardName").innerHTML="<h1>« Soundboard "+currentKeyboard+" »</h1>"
 	} else if(e.keyCode === 39){
 		currentKeyboard++;
-        document.getElementById("keyboardName").innerHTML="<h1>« Keyboard "+currentKeyboard+" »</h1>"
+        document.getElementById("keyboardName").innerHTML="<h1>« Soundboard "+currentKeyboard+" »</h1>"
 	}
 }
 
