@@ -4,8 +4,8 @@ body {
 
 
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #000000;
+    color: #07C1BE;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -14,34 +14,35 @@ body {
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #333333;
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.menu {
     position: relative;
     display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.menu-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #474747;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: white;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
+.menu-content a {
+    color: #07C1BE;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.menu-content a:hover {background-color: #1a1a1a}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
