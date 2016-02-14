@@ -22,10 +22,9 @@ function recolorKeyboard(color) {
 		
 		var canvas = canvases[xe];
 		var ctx = canvases[xe].getContext("2d");
-
 		originalPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
 		currentPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
-		changeColor(currentPixels, originalPixels);
+		changeColor(currentPixels, originalPixels, xe);
 	}
 }
 
@@ -39,18 +38,23 @@ function hexToRGB(hex)
     };
 }
 
- function changeColor(currentPixels, originalPixels)
+ function changeColor(currentPixels, originalPixels, index)
     {
+        mug=canvases[index];
+        var ctx = canvases[xe].getContext("2d");
+        var canvas = canvases[xe];
         if(!originalPixels) return; // Check if image has loaded
-        var newColor = hexToRGB(document.getElementById("color").value);
+        var hexx = hexToRGB(document.getElementById("color").value)
+        canvas.style.borderColor = document.getElementById("color").value;
+        var newColor = hexx;
 
         for(var I = 0, L = originalPixels.data.length; I < L; I += 4)
         {
-            if(currentPixels.data[I + 3] > 0) // If it's not a transparent pixel
+            if((currentPixels.data[I + 3]+currentPixels.data[I + 2]+currentPixels.data[I + 1]+currentPixels.data[I]) > 0) // If it's not a transparent pixel
             {
-                currentPixels.data[I] = originalPixels.data[I] / 255 * newColor.R;
-                currentPixels.data[I + 1] = originalPixels.data[I + 1] / 255 * newColor.G;
-                currentPixels.data[I + 2] = originalPixels.data[I + 2] / 255 * newColor.B;
+                currentPixels.data[I] = newColor.R;
+                currentPixels.data[I + 1] = newColor.G;
+                currentPixels.data[I + 2] = newColor.B;
             }
         }
 
