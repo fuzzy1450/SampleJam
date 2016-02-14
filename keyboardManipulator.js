@@ -46,6 +46,7 @@ function hexToRGB(hex)
         if(!originalPixels) return; // Check if image has loaded
         var hexx = hexToRGB(document.getElementById("color").value)
         canvas.style.borderColor = document.getElementById("color").value;
+        document.body.style.setProperty("color", document.getElementById("color").value, "important");
         var newColor = hexx;
 
         for(var I = 0, L = originalPixels.data.length; I < L; I += 4)

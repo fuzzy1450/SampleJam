@@ -23,10 +23,15 @@
             
             </div>
             <div id="sbDropdown" class="n">
-                <button onclick="soundMenu()" class="soundMenu">Sounds</button> <br>
-                <button onclick="loopMenu()" class="loopMenu">Loops</button> <br>
-                <button onclick="soundboards()" class="soundboards">Soundboards</button>
-            </div>
+                <button onclick="soundMenu()" class="soundMenu sbDrop">Sounds</button> <br>
+                <button onclick="loopMenu()" class="loopMenu sbDrop">Loops</button> <br>
+                <button onclick="soundboards()" class="soundboards sbDrop">Soundboards</button>
+                <button onclick="closeSbDrop()" class ="exit">X</button>
+                <div id="sbMenu">
+                    <input type="color" id="color" oninput="recolorKeyboard()">
+                </div>
+        </div>
+        
         <div class="keyboard">
             <div class="row0">
                 <canvas class="canvas"></canvas>
@@ -74,7 +79,6 @@
             </div>
         </div>
         
-        <input type="color" id="color"></input>
         
         
         <script src="main.js"></script>

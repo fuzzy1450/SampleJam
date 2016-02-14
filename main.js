@@ -9,6 +9,11 @@ function sbMenu() {
     document.getElementById("sbDropdown").style.display="block";
 }
 
+function soundboards(){
+    document.getElementById("sbMenu").style.display = "block";
+    document.getElementsByClassName("soundboards")[0].style.backgroundColor = "#696969";
+}
+
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {

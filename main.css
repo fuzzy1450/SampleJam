@@ -61,6 +61,38 @@ body {
     background-color: #333333;
 }
 
+#sbMenu{
+    top: 0px;
+    left: 145px;
+    display: none;
+    height: 396px;
+    width: 250px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000001;
+    background-color: dimgray;
+    position: absolute;
+    float: right;
+    border-left: 0px;
+}
+
+.sbDrop{
+    margin-bottom: 16px;
+    width:150px;
+    text-align: left;
+}
+
+.exit{
+    float:left;
+    margin-top:auto;
+    width:25px;
+    background-color: white;
+    height: 25px;
+    position:absolute;
+    left:5px;
+    top: 370px;
+}
+
 .soundboard {
     background-color: #000000;
     color: #07C1BE;
