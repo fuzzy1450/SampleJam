@@ -76,6 +76,7 @@ function getKey(e){
             break;
         case 89:
             playSound("B4", 89);
+            break;
         case 85:
             playSound("Cn5", 85);
             break;
