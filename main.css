@@ -33,16 +33,6 @@ body {
     color: white;
 }
 
-/* Links inside the dropdown */
-.menu-content a {
-    color: #07C1BE;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.menu-content a:hover {background-color: #1a1a1a}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
@@ -50,5 +40,71 @@ body {
 .logo {
     width: 5.75%;
     float: right;
-    margin: 1px;
+    margin: 20px;
+}
+.help {
+  background-color: #000000;
+    color: #07C1BE;
+    width: 160px;
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.help:hover, .help:hover {
+    background-color: #333333;
+}
+
+.soundboard {
+    background-color: #000000;
+    color: #07C1BE;
+    width: 160px;
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.soundboard:hover, .soundboard:focus {
+    background-color: #333333;
+}
+
+.recsettings {
+    background-color: #000000;
+    color: #07C1BE;
+    width: 160px;
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.recsettings:hover, .recsettings:focus {
+    background-color: #333333;
+}
+
+.export {
+    background-color: #000000;
+    color: #07C1BE;
+    width: 160px;
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.export:hover, .export:focus {
+    background-color: #333333;
+}
+
+#sbDropdown{
+    display: none;
+    position: relative;
+    background-color: #000000;
+    color: #07C1BE;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
 }

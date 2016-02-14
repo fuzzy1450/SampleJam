@@ -7,16 +7,25 @@
 	</head>
 	<body onkeydown="getKey()" onkeyup="clearKey()">
         
+        <img src="assets/SampleJam%20Logo.png" class="logo">
         <div class="menu">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <button onclick="firstDropdown()" class="dropbtn">Menu</button>
             <div id="myDropdown" class="menu-content">
-                <a href="#">Help</a>
-                <a href="#">Soundboard Settings</a>
-                <a href="#">Recording Settings</a>
-                <a href="#">Export</a>
+                <button onclick="helpMenu()" class="help">Help</button>
+                <button onclick="sbMenu()" class="soundboard">Soundboard Settings</button>
+                <button onclick="recMenu()" class="recsettings">Recording Settings</button>
+                <button onclick="expMenu()" class="export">Export</button>
             </div>
         </div>
-        <img src="assets/SampleJam%20Logo.png" class="logo">
+            <div id="helpDropdown">
+                
+            
+            </div>
+            <div id="sbDropdown" class="n">
+            
+                
+            </div>
+        
         
         
         
