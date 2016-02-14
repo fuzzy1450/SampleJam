@@ -6,7 +6,7 @@ for(xi=0; xi!=500; xi++){
 function newSound(soundName, fileLoc, extension){
 		window[soundName+ "s"] = [];
 		window[soundName+"sIndex"] = 0;
-		for(xi=0; xi!=30; xi++){
+		for(xi=0; xi!=15; xi++){
 			window[soundName+"s"][xi] = new buzz.sound(fileLoc, {formats:[extension]});;
 		}
 		
@@ -38,17 +38,17 @@ newSound("ichord12", "./Sounds/Synths/Intro/Chords/chord12(D4A4Cn5)half", "wav")
 newSound("ichord13", "./Sounds/Synths/Intro/Chords/chord13(A4Cn5E5)4th", "wav");
 newSound("ichord14", "./Sounds/Synths/Intro/Chords/chord14(Fn4B4D5)4th", "wav");
 newSound("A4", "./Sounds/Synths/Intro/Notes/A4", "wav");
-newSound("A4 16th", "./Sounds/Synths/Intro/Notes/A416th", "wav");
+newSound("A416th", "./Sounds/Synths/Intro/Notes/A416th", "wav");
 newSound("A5", "./Sounds/Synths/Intro/Notes/A5", "wav");
 newSound("B4", "./Sounds/Synths/Intro/Notes/B4", "wav");
-newSound("C#5", "./Sounds/Synths/Intro/Notes/Cn5", "wav");
+newSound("Cn5", "./Sounds/Synths/Intro/Notes/Cn5", "wav");
 newSound("D4", "./Sounds/Synths/Intro/Notes/D4", "wav");
 newSound("D5", "./Sounds/Synths/Intro/Notes/D5", "wav");
 newSound("E4", "./Sounds/Synths/Intro/Notes/E4", "wav");
-newSound("E4-F#4", "./Sounds/Synths/Intro/Notes/E4-Fn4", "wav");
+newSound("E4dFn4", "./Sounds/Synths/Intro/Notes/E4-Fn4", "wav");
 newSound("E5", "./Sounds/Synths/Intro/Notes/E5", "wav");
-newSound("F#4", "./Sounds/Synths/Intro/Notes/Fn4", "wav");
-
+newSound("Fn4", "./Sounds/Synths/Intro/Notes/Fn4", "wav");
+newSound("airhorn", "./Sounds/airhorn", "mp3")
 
 
 function getKey(e){
@@ -56,10 +56,10 @@ function getKey(e){
 	console.log(e.keyCode + " 1");
 	switch (e.keyCode){
 		case 88:
-			playSound("hats", 88);
+			playSound("hat", 88);
 			break;
 		case 101:
-			playSound("airhorns", 101);
+			playSound("airhorn", 101);
 			break;
         case 81:
             playSound("D4", 81);
@@ -68,7 +68,7 @@ function getKey(e){
             playSound("E4", 87);
             break;
         case 69:
-            playSound("E4-F#4")
+            playSound("E4dFn4", 69)
 	}
 	
 }
@@ -80,10 +80,10 @@ function clearKey(e){
 
 function playSound(x, y){
 	if(!playing[y]){
-		window[x][window[x+"Index"]].play();
-		window[x+"Index"]++;
-		if(window[x+"Index"]>28){
-			window[x+"Index"]=0;
+		window[x+"s"][window[x+"sIndex"]].play();
+		window[x+"sIndex"]++;
+		if(window[x+"sIndex"]>14){
+			window[x+"sIndex"]=0;
 		}
 		playing[y]=true;
 	}
