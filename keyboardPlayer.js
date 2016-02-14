@@ -220,8 +220,13 @@ function playSound(x, y){
 		playing[y]=true;
 	}
 }
+firstRun=true;
 function playMetro() {
 	playSound("metronome", 1);
+	if(firstRun){
+		startKeyboard();
+		firstRun=false;
+	}
 }
 
 metronomeTimer = window.setInterval(playMetro(), 461);
