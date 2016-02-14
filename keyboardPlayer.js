@@ -103,6 +103,7 @@ function getKey(e){
 				break;
 			case 70:
 				playSound("whip", 70);
+                break;
 			case 71:
 				playSound("A416th", 71);
 				break;
@@ -135,6 +136,7 @@ function getKey(e){
 				break;
 			case 78:
 				playSound("ichord2", 78);
+                break;
 			case 77:
 				playSound("ichord3", 77);
 				break;
@@ -142,7 +144,54 @@ function getKey(e){
 		}
 	} else if(currentKeyboard==2){
 		switch(e.keyCode){
-			
+			case 65:
+				playSound("cracklingC5", 65);
+				break;
+			case 83:
+				playSound("reverb1", 83);
+				break;
+			case 68:
+				playSound("whitenoise1", 68);
+				break;
+			case 70:
+				playSound("whip", 70);
+                break;
+            case 71:
+				playSound("ichord10", 71);
+				break;
+			case 72:
+				playSound("ichord2", 72);
+				break;
+			case 74:
+				playSound("ichord1", 74);
+				break;
+			case 75:
+				playSound("ichord9", 75);
+				break;
+			case 76:
+				playSound("ichord8", 76);
+                case 90:
+				playSound("kick", 90);
+				break;
+			case 88:
+				playSound("hat", 88);
+				break;
+			case 67:
+				playSound("snare", 67);
+				break;
+			case 86:
+				playSound("notificationA4", 86);
+				break;
+			case 66:
+				playSound("ichord12", 66);
+				break;
+			case 78:
+				playSound("ichord13", 78);
+                break;
+			case 77:
+				playSound("ichord14", 77);
+				break;
+                
 		}
 	}
 	
