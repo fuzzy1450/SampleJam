@@ -6,7 +6,7 @@ for(xi=0; xi!=500; xi++){
 function newSound(soundName, fileLoc, extension){
 		window[soundName+ "s"] = [];
 		window[soundName+"sIndex"] = 0;
-		for(xi=0; xi!=75; xi++){
+		for(xi=0; xi!=30; xi++){
 			window[soundName+"s"][xi] = new buzz.sound(fileLoc, {formats:[extension]});;
 		}
 		
@@ -20,34 +20,34 @@ newSound("loop1", "./Sounds/Loops/loop1", "wav");
 newSound("hat", "./Sounds/Percussion/hat", "wav");
 newSound("kick", "./Sounds/Percussion/kick", "wav");
 newSound("snare", "./Sounds/Percussion/snare", "wav");
-newSound("chord1", "./Sounds/Drop1/Chords/chord1(D4A4Cn5)", "wav");
-newSound("chord2", "./Sounds/Drop1/Chords/chord2(A4Cn5E5)", "wav");
-newSound("chord3", "./Sounds/Drop1/Chords/chord3(D4Fn4B4)", "wav");
-newSound("ichord1", "./Sounds/Intro/Chords/chord1(DACn)", "wav");
-newSound("ichord2", "./Sounds/Intro/Chords/chord2(DFnB)", "wav");
-newSound("ichord3", "./Sounds/Intro/Chords/chord3(EACn)", "wav");
-newSound("ichord4", "./Sounds/Intro/Chords/chord4(B4Fn4) 16th", "wav");
-newSound("ichord5", "./Sounds/Intro/Chords/chord5(Cn5Fn4) 16th", "wav");
-newSound("ichord6", "./Sounds/Intro/Chords/chord6(Gn4E4) 16th", "wav");
-newSound("ichord7", "./Sounds/Intro/Chords/chord7(A4Fn4) 16th", "wav");
-newSound("ichord8", "./Sounds/Intro/Chords/chord8(A4E5)", "wav");
-newSound("ichord9", "./Sounds/Intro/Chords/chord9(Fn4A4D5)", "wav");
-newSound("ichord10", "./Sounds/Intro/Chords/chord10(Cn4Fn4A4)", "wav");
-newSound("ichord11", "./Sounds/Intro/Chords/chord11(D4Fn4B4whole)", "wav");
-newSound("ichord12", "./Sounds/Intro/Chords/chord12 (D4A4Cn5) half", "wav");
-newSound("ichord13", "./Sounds/Intro/Chords/chord13 (A4Cn5E5) 4th", "wav");
-newSound("ichord14", "./Sounds/Intro/Chords/chord14 (Fn4B4D5) 4th", "wav");
-newSound("A4", "./Sounds/Intro/Notes/A4", "wav");
-newSound("A4 16th", "./Sounds/Intro/Notes/A416th", "wav");
-newSound("A5", "./Sounds/Intro/Notes/A5", "wav");
-newSound("B4", "./Sounds/Intro/Notes/B4", "wav");
-newSound("C#5", "./Sounds/Intro/Notes/Cn5", "wav");
-newSound("D4", "./Sounds/Intro/Notes/D4", "wav");
-newSound("D5", "./Sounds/Intro/Notes/D5", "wav");
-newSound("E4", "./Sounds/Intro/Notes/E4", "wav");
-newSound("E4-F#4", "./Sounds/Intro/Notes/E4-Fn4", "wav");
-newSound("E5", "./Sounds/Intro/Notes/E5", "wav");
-newSound("F#4", "./Sounds/Intro/Notes/Fn4", "wav");
+newSound("chord1", "./Sounds/Synths/Drop1/Chords/chord1(D4A4Cn5)", "wav");
+newSound("chord2", "./Sounds/Synths/Drop1/Chords/chord2(A4Cn5E5)", "wav");
+newSound("chord3", "./Sounds/Synths/Drop1/Chords/chord3(D4Fn4B4)", "wav");
+newSound("ichord1", "./Sounds/Synths/Intro/Chords/chord(DACn)", "wav");
+newSound("ichord2", "./Sounds/Synths/Intro/Chords/chord2(DFnB)", "wav");
+newSound("ichord3", "./Sounds/Synths/Intro/Chords/chord3(EACn)", "wav");
+newSound("ichord4", "./Sounds/Synths/Intro/Chords/chord4(B4Fn4)16th", "wav");
+newSound("ichord5", "./Sounds/Synths/Intro/Chords/chord5(Cn5Gn4)16th", "wav");
+newSound("ichord6", "./Sounds/Synths/Intro/Chords/chord6(Gn4E4)16th", "wav");
+newSound("ichord7", "./Sounds/Synths/Intro/Chords/chord7(A4Fn4)16th", "wav");
+newSound("ichord8", "./Sounds/Synths/Intro/Chords/chord8(A4E5)", "wav");
+newSound("ichord9", "./Sounds/Synths/Intro/Chords/chord9(Fn4A4D5)", "wav");
+newSound("ichord10", "./Sounds/Synths/Intro/Chords/chord10(Cn4Fn4A4)", "wav");
+newSound("ichord11", "./Sounds/Synths/Intro/Chords/chord11(D4Fn4B4whole)", "wav");
+newSound("ichord12", "./Sounds/Synths/Intro/Chords/chord12(D4A4Cn5)half", "wav");
+newSound("ichord13", "./Sounds/Synths/Intro/Chords/chord13(A4Cn5E5)4th", "wav");
+newSound("ichord14", "./Sounds/Synths/Intro/Chords/chord14(Fn4B4D5)4th", "wav");
+newSound("A4", "./Sounds/Synths/Intro/Notes/A4", "wav");
+newSound("A4 16th", "./Sounds/Synths/Intro/Notes/A416th", "wav");
+newSound("A5", "./Sounds/Synths/Intro/Notes/A5", "wav");
+newSound("B4", "./Sounds/Synths/Intro/Notes/B4", "wav");
+newSound("C#5", "./Sounds/Synths/Intro/Notes/Cn5", "wav");
+newSound("D4", "./Sounds/Synths/Intro/Notes/D4", "wav");
+newSound("D5", "./Sounds/Synths/Intro/Notes/D5", "wav");
+newSound("E4", "./Sounds/Synths/Intro/Notes/E4", "wav");
+newSound("E4-F#4", "./Sounds/Synths/Intro/Notes/E4-Fn4", "wav");
+newSound("E5", "./Sounds/Synths/Intro/Notes/E5", "wav");
+newSound("F#4", "./Sounds/Synths/Intro/Notes/Fn4", "wav");
 
 
 
@@ -82,7 +82,7 @@ function playSound(x, y){
 	if(!playing[y]){
 		window[x][window[x+"Index"]].play();
 		window[x+"Index"]++;
-		if(window[x+"Index"]>70){
+		if(window[x+"Index"]>28){
 			window[x+"Index"]=0;
 		}
 		playing[y]=true;
