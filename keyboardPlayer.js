@@ -3,6 +3,8 @@ for(xi=0; xi!=500; xi++){
 	playing[xi] = false;
 }
 
+var keyboardNames =["Keyboard 1", "Keyboard 2"];
+
 var currentKeyboard = 1;
 
 function newSound(soundName, fileLoc, extension){
