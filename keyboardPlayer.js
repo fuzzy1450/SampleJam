@@ -230,4 +230,3 @@ function playMetro() {
 }
 
 metronomeTimer = window.setInterval(playMetro(), 461);
-startKeyboard();

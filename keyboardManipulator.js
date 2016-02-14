@@ -9,8 +9,10 @@ function startKeyboard(){
 	
 		img = new Image(600, 600);
 		img.src = ('./assets/keyboard/'+imageNames[xe]+".png");
+		img.width=64;
+		img.height=64;
 	
-		ctx.drawImage(img,0,0);
+		ctx.drawImage(img,0,0,64,100);
 	
 	}
 }
