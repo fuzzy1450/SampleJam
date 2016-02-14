@@ -38,16 +38,16 @@ newSound("ichord12", "./Sounds/Synths/Intro/Chords/chord12(D4A4Cn5)half", "wav")
 newSound("ichord13", "./Sounds/Synths/Intro/Chords/chord13(A4Cn5E5)4th", "wav");
 newSound("ichord14", "./Sounds/Synths/Intro/Chords/chord14(Fn4B4D5)4th", "wav");
 newSound("A4", "./Sounds/Synths/Intro/Notes/A4", "wav");
-newSound("A4 16th", "./Sounds/Synths/Intro/Notes/A416th", "wav");
+newSound("A416th", "./Sounds/Synths/Intro/Notes/A416th", "wav");
 newSound("A5", "./Sounds/Synths/Intro/Notes/A5", "wav");
 newSound("B4", "./Sounds/Synths/Intro/Notes/B4", "wav");
-newSound("C#5", "./Sounds/Synths/Intro/Notes/Cn5", "wav");
+newSound("Cn5", "./Sounds/Synths/Intro/Notes/Cn5", "wav");
 newSound("D4", "./Sounds/Synths/Intro/Notes/D4", "wav");
 newSound("D5", "./Sounds/Synths/Intro/Notes/D5", "wav");
 newSound("E4", "./Sounds/Synths/Intro/Notes/E4", "wav");
-newSound("E4-F#4", "./Sounds/Synths/Intro/Notes/E4-Fn4", "wav");
+newSound("E4dFn4", "./Sounds/Synths/Intro/Notes/E4-Fn4", "wav");
 newSound("E5", "./Sounds/Synths/Intro/Notes/E5", "wav");
-newSound("F#4", "./Sounds/Synths/Intro/Notes/Fn4", "wav");
+newSound("Fn4", "./Sounds/Synths/Intro/Notes/Fn4", "wav");
 
 
 
@@ -68,7 +68,7 @@ function getKey(e){
             playSound("E4", 87);
             break;
         case 69:
-            playSound("E4-F#4")
+            playSound("E4-Fn4")
 	}
 	
 }
