@@ -120,7 +120,7 @@ body {
 }
 
 
-.row0 img {
+.row0 canvas {
     width: 8%;
     margin-left: 4px;
     margin-top: 4px;
@@ -128,17 +128,17 @@ body {
     margin-bottom: 24px;
 }
 
-.row1 img {
+.row1 canvas {
     width: 8%;
     margin: 4px;
 }
 
-.row2 img {
+.row2 canvas {
     width: 8%;
     margin: 4px;
 }
 
-.row3 img {
+.row3 canvas {
     width: 8%;
     margin: 4px;
 }
