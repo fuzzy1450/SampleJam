@@ -6,7 +6,7 @@ for(xi=0; xi!=500; xi++){
 function newSound(soundName, fileLoc, extension){
 		window[soundName+ "s"] = [];
 		window[soundName+"sIndex"] = 0;
-		for(xi=0; xi!=30; xi++){
+		for(xi=0; xi!=15; xi++){
 			window[soundName+"s"][xi] = new buzz.sound(fileLoc, {formats:[extension]});;
 		}
 		
@@ -68,7 +68,7 @@ function getKey(e){
             playSound("E4", 87);
             break;
         case 69:
-            playSound("E4-Fn4")
+            playSound("E4dFn4")
 	}
 	
 }
@@ -82,7 +82,7 @@ function playSound(x, y){
 	if(!playing[y]){
 		window[x][window[x+"Index"]].play();
 		window[x+"Index"]++;
-		if(window[x+"Index"]>28){
+		if(window[x+"Index"]>14){
 			window[x+"Index"]=0;
 		}
 		playing[y]=true;
