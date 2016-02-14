@@ -55,6 +55,13 @@ newSound("E5", "./Sounds/Synths/Intro/Notes/E5", "wav");
 newSound("Fn4", "./Sounds/Synths/Intro/Notes/Fn4", "wav");
 newSound("airhorn", "./Sounds/airhorn", "mp3");
 newSound("metronome", "./Sounds/metronome", "wav");
+newSound("note1", "./Sounds/Synths/Drop1/Notes/note1", "wav");
+newSound("note2", "./Sounds/Synths/Drop1/Notes/note2", "wav");
+newSound("note3", "./Sounds/Synths/Drop1/Notes/note3", "wav");
+newSound("note4", "./Sounds/Synths/Drop1/Notes/note4", "wav");
+newSound("note5", "./Sounds/Synths/Drop1/Notes/note5", "wav");
+newSound("dropPercLoop1", "./Sounds/Synths/Drop1/dropPercLoop1", "wav");
+newSound("subBassLoop1", "./Sounds/Synths/Drop1/subBassLoop1", "wav");
 
 
 function getKey(e){
@@ -147,8 +154,38 @@ function getKey(e){
 		}
 	} else if(currentKeyboard==2){
 		switch(e.keyCode){
-			case 65:
-				playSound("cracklingC5", 65);
+            case 81:
+                playSound("chord1", 81);
+                break;
+            case 87:
+                playSound("chord2",87);
+                break;
+            case 69:
+                playSound("chord3", 69);
+                break;
+            case 82:
+				playSound("note1", 82);
+				break;
+			case 84: 
+				playSound("note2", 84);
+				break;
+			case 89:
+				playSound("note3", 89);
+				break;
+			case 85:
+				playSound("note4", 85);
+				break;
+			case 73:
+				playSound("note5", 73);
+				break;
+			case 79:
+				playSound("subBassLoop1", 79);
+				break;
+			case 80:
+				playSound("dropPercLoop1", 80);
+				break;
+            case 65:
+				playSound("metronome", 65);
 				break;
 			case 83:
 				playSound("reverb1", 83);
