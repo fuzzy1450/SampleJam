@@ -63,12 +63,13 @@ body {
 
 #keyboardName{
     text-align: center;
-    width:350px;
+    margin: 0 auto;
+	width: 30%;
+	min-width: 200px;
     border-style: solid;
     border-color: black;
     border-width: 4px;
-    position:fixed;
-    left: 34.15080527%;
+    position:relative;
 }
 
 #sbMenu{

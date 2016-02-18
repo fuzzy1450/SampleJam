@@ -238,10 +238,10 @@ function getKey(e){
 	
 	if(e.keyCode===37){
 		currentKeyboard--;
-        document.getElementById("keyboardName").innerHTML="<h1>« Soundboard "+currentKeyboard+" »</h1>"
+        document.getElementById("keyboardName").innerHTML="<h1> \<  Soundboard "+currentKeyboard+"  \> </h1>"
 	} else if(e.keyCode === 39){
 		currentKeyboard++;
-        document.getElementById("keyboardName").innerHTML="<h1>« Soundboard "+currentKeyboard+" »</h1>"
+        document.getElementById("keyboardName").innerHTML=" <h1> \<  Soundboard "+currentKeyboard+"  \> </h1>"
 	}
 }
 
@@ -261,6 +261,7 @@ function playSound(x, y){
 		playing[y]=true;
         console.log("key"+y);
         document.getElementsByClassName("key"+y)[0].style.backgroundColor="#FFFFFF";
+		startKeyboard();
 	}
 }
 firstRun=true;
@@ -269,6 +270,4 @@ function playMetro() {
 	setTimeout(startKeyboard(), 3000);
     document.getElementsByClassName("key"+77)[0].style.backgroundColor="transparent";
 }
-
-metronomeTimer = window.setInterval(playMetro(), 461);
 

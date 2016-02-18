@@ -7,9 +7,11 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body onkeydown="getKey()" onkeyup="clearKey()" onload="startKeyboard()">
-        <div id="keyboardName"><h1>Keyboard 1</h1></div>
-        <img src="assets/SampleJam%20Logo.png" class="logo">
-        <div class="menu">
+        
+        
+			<img src="assets/SampleJam%20Logo.png" class="logo">
+		
+		<div class="menu">
             <button onclick="firstDropdown()" class="dropbtn">Menu</button>
             <div id="myDropdown" class="menu-content">
                 <button onclick="helpMenu()" class="help">Help</button>
@@ -35,7 +37,7 @@
                     <p id="nonintrusive">Choose Keyboard Color:</p><input type="color" id="color" oninput="recolorKeyboard()">
                 </div>
         </div>
-        
+        <div id="keyboardName"><h1>Soundboard 1</h1></div>
         <div class="keyboard">
             <div class="row0">
                 <canvas class="canvas key49"></canvas>
